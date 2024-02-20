@@ -5,9 +5,10 @@ body {
 	flex-direction: column;
 	align-items: center;
 	margin-top: 20px;
+	background-color: #191919;
 }
 h1 {
-	color: #333;
+	color: #fff;
 }
 .container {
 	display: flex;
@@ -24,26 +25,31 @@ textarea {
 	border: 2px solid #007BFF;
 	outline: none;
 	resize: none;
+    background-color: #5d5d5d;
+    border-color: #232D3F;
 }
 textarea:focus {
-	border-color: #0056b3;
+	border-color: #005B41;
 }
-textarea[readonly] {
-	background-color: #f3f3f3;
-	border-color: #ccc;
-}
+
 button {
 	padding: 10px 20px;
 	margin: 0 5px;
 	border: none;
 	border-radius: 5px;
-	background-color: #007BFF;
+	background-color: #008170;
 	color: white;
 	cursor: pointer;
 	transition: background-color 0.3s ease;
 }
 button:hover {
-	background-color: #0056b3;
+	background-color: #005B41;
+}
+button.reset {
+	background-color: #D70040;
+}
+button.reset:hover {
+	background-color: #d70040cc;
 }
 #result {
 	margin-top: 20px;
@@ -57,4 +63,5 @@ button:hover {
 }
 h3 {
 	text-align: center;
+	color: #005B41;
 }
