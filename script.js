@@ -1,5 +1,5 @@
 function checkFizzBuzz() {
-    const correctOutput =
+	const correctOutput =
 `1
 2
 fizz
@@ -100,22 +100,21 @@ fizz
 98
 fizz
 buzz`.trim();
-    const userOutput = document.getElementById("userOutput").value.trim();
+	const userOutput = document.getElementById("userOutput").value.trim();
 
-    const resultElement = document.getElementById("result");
-    if(userOutput === correctOutput) {
-        resultElement.textContent = "Correct! 🎆";
-        resultElement.style.color = "green";
-    } else {
-        resultElement.textContent = "Sorry, that's incorrect. 😢";
-        resultElement.style.color = "red";
-    }
+	const resultElement = document.getElementById("result");
+	if(userOutput === correctOutput) {
+		resultElement.textContent = "Correct! 🎆";
+		resultElement.style.color = "green";
+	} else {
+		resultElement.textContent = "Sorry, that's incorrect. 😢";
+		resultElement.style.color = "red";
+	}
 }
 
 function resetOutput() {
-    document.getElementById("userOutput").value = "";
-    const resultElement = document.getElementById("result");
-    resultElement.textContent = "";
-    // Optional: Reset color to default (if your page has a different default color)
-    resultElement.style.color = "black"; // Change "black" to whatever your default text color is
+	document.getElementById("userOutput").value = "";
+	const resultElement = document.getElementById("result");
+	resultElement.textContent = "";
+	resultElement.style.color = "black";
 }
